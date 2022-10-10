@@ -22,10 +22,8 @@ defmodule Hatch.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:spawn_sdk, path: "../oss/spawn/apps/spawn_sdk"},
+      {:spawn_sdk, path: "../oss/spawn/spawn_sdk/spawn_sdk"},
       {:uniq, "~> 0.5.3"}
-      # {:protobuf, "~> 0.10.0"},
-      # {:google_protos, "~> 0.1"}
     ]
   end
 end
