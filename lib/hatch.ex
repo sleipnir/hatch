@@ -18,27 +18,45 @@ defmodule Hatch do
     params = Map.merge(params, %{permit_id: permit_id})
 
     with %RequirePermit{} = cmd <- RequirePermit.new(params),
-         {:ok, _} <- SpawnSystem.spawn_actor("spawn-system", permit_id, PermitActor) do
-      SpawnSystem.invoke("spawn-system", permit_id, :require, cmd)
+         {:ok, _} <- SpawnSdk.spawn_actor(permit_id, system: "spawn-system", actor: PermitActor) do
+      SpawnSystem.invoke(permit_id, system: "spawn-system", command: :require, payload: cmd)
     end
   end
 
   def submit_permit(permit_id) do
     with %SubmitPermit{} = cmd <- SubmitPermit.new(permit_id: permit_id) do
-      SpawnSystem.invoke("spawn-system", permit_id, :submit, cmd)
+      SpawnSdk.invoke(
+        permit_id,
+        ref: PermitActor,
+        system: "spawn-system",
+        command: :submit,
+        payload: cmd
+      )
     end
   end
 
   def reject_permit(permit_id, rejection_reason) do
     with %RejectPermit{} = cmd <-
            RejectPermit.new(permit_id: permit_id, rejection_reason: rejection_reason) do
-      SpawnSystem.invoke("spawn-system", permit_id, :reject, cmd)
+      SpawnSdk.invoke(
+        permit_id,
+        ref: PermitActor,
+        system: "spawn-system",
+        command: :reject,
+        payload: cmd
+      )
     end
   end
 
   def approve_permit(permit_id) do
     with %ApprovePermit{} = cmd <- ApprovePermit.new(permit_id: permit_id) do
-      SpawnSystem.invoke("spawn-system", permit_id, :approve, cmd)
+      SpawnSdk.invoke(
+        permit_id,
+        ref: PermitActor,
+        system: "spawn-system",
+        command: :approve,
+        payload: cmd
+      )
     end
   end
 end

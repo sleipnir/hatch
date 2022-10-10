@@ -1,6 +1,6 @@
 # Hatch
 
-**TODO: Add description**
+**A basic state machine workflow modeling a typical approval process with basic invariants to uphold using Spawn.**
 
 ## Installation
 

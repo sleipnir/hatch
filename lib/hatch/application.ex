@@ -14,7 +14,7 @@ defmodule Hatch.Application do
         actors: [
           # Hatch.MyActor,
           # Hatch.AbstractActor,
-          Hatch.PermitActor,
+          Hatch.PermitActor
         ]
       }
     ]

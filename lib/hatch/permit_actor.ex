@@ -12,7 +12,6 @@ defmodule Hatch.PermitActor do
   """
   use SpawnSdk.Actor,
     abstract: true,
-    persistent: true,
     state_type: Hatch.Permitting.Permit
 
   require Logger

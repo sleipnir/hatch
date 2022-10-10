@@ -1,162 +1,162 @@
 defmodule Hatch.Permitting.Permit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "Permit",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "status",
-          extendee: nil,
-          number: 2,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "status",
+          label: :LABEL_OPTIONAL,
+          name: "status",
+          number: 2,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "submitted_by",
-          extendee: nil,
-          number: 3,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "submittedBy",
+          label: :LABEL_OPTIONAL,
+          name: "submitted_by",
+          number: 3,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "notes",
-          extendee: nil,
-          number: 4,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "notes",
+          label: :LABEL_OPTIONAL,
+          name: "notes",
+          number: 4,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "authority",
-          extendee: nil,
-          number: 5,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "authority",
-          proto3_optional: nil,
-          __unknown_fields__: []
-        },
-        %Google.Protobuf.FieldDescriptorProto{
-          name: "rejection_reason",
-          extendee: nil,
-          number: 6,
           label: :LABEL_OPTIONAL,
+          name: "authority",
+          number: 5,
+          oneof_index: nil,
+          options: nil,
+          proto3_optional: nil,
           type: :TYPE_STRING,
-          type_name: nil,
+          type_name: nil
+        },
+        %Google.Protobuf.FieldDescriptorProto{
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "rejectionReason",
+          label: :LABEL_OPTIONAL,
+          name: "rejection_reason",
+          number: 6,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "required_on",
-          extendee: nil,
-          number: 7,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "requiredOn",
+          label: :LABEL_OPTIONAL,
+          name: "required_on",
+          number: 7,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "submitted_on",
-          extendee: nil,
-          number: 8,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "submittedOn",
+          label: :LABEL_OPTIONAL,
+          name: "submitted_on",
+          number: 8,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "approved_on",
-          extendee: nil,
-          number: 9,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "approvedOn",
+          label: :LABEL_OPTIONAL,
+          name: "approved_on",
+          number: 9,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "rejected_on",
-          extendee: nil,
-          number: 10,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "rejectedOn",
+          label: :LABEL_OPTIONAL,
+          name: "rejected_on",
+          number: 10,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         }
       ],
+      name: "Permit",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
@@ -171,68 +171,67 @@ defmodule Hatch.Permitting.Permit do
   field :approved_on, 9, type: :int32, json_name: "approvedOn"
   field :rejected_on, 10, type: :int32, json_name: "rejectedOn"
 end
-
 defmodule Hatch.Permitting.RequirePermit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "RequirePermit",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "authority",
-          extendee: nil,
-          number: 2,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "authority",
+          label: :LABEL_OPTIONAL,
+          name: "authority",
+          number: 2,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "notes",
-          extendee: nil,
-          number: 3,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "notes",
+          label: :LABEL_OPTIONAL,
+          name: "notes",
+          number: 3,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "RequirePermit",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
@@ -240,254 +239,249 @@ defmodule Hatch.Permitting.RequirePermit do
   field :authority, 2, type: :string
   field :notes, 3, type: :string
 end
-
 defmodule Hatch.Permitting.RejectPermit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "RejectPermit",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "rejection_reason",
-          extendee: nil,
-          number: 2,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "rejectionReason",
+          label: :LABEL_OPTIONAL,
+          name: "rejection_reason",
+          number: 2,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "RejectPermit",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
   field :permit_id, 1, type: :string, json_name: "permitId"
   field :rejection_reason, 2, type: :string, json_name: "rejectionReason"
 end
-
 defmodule Hatch.Permitting.SubmitPermit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "SubmitPermit",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "SubmitPermit",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
   field :permit_id, 1, type: :string, json_name: "permitId"
 end
-
 defmodule Hatch.Permitting.ApprovePermit do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "ApprovePermit",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "ApprovePermit",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
   field :permit_id, 1, type: :string, json_name: "permitId"
 end
-
 defmodule Hatch.Permitting.PermitApproved do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "PermitApproved",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "approved_on",
-          extendee: nil,
-          number: 2,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "approvedOn",
+          label: :LABEL_OPTIONAL,
+          name: "approved_on",
+          number: 2,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         }
       ],
+      name: "PermitApproved",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
   field :permit_id, 1, type: :string, json_name: "permitId"
   field :approved_on, 2, type: :int32, json_name: "approvedOn"
 end
-
 defmodule Hatch.Permitting.PermitRejected do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "PermitRejected",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
-          proto3_optional: nil,
-          __unknown_fields__: []
-        },
-        %Google.Protobuf.FieldDescriptorProto{
-          name: "rejected_on",
-          extendee: nil,
-          number: 2,
           label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
-          default_value: nil,
-          options: nil,
+          name: "permit_id",
+          number: 1,
           oneof_index: nil,
-          json_name: "rejectedOn",
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
-        },
-        %Google.Protobuf.FieldDescriptorProto{
-          name: "rejection_reason",
-          extendee: nil,
-          number: 3,
-          label: :LABEL_OPTIONAL,
           type: :TYPE_STRING,
-          type_name: nil,
+          type_name: nil
+        },
+        %Google.Protobuf.FieldDescriptorProto{
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
+          extendee: nil,
+          json_name: "rejectedOn",
+          label: :LABEL_OPTIONAL,
+          name: "rejected_on",
+          number: 2,
           oneof_index: nil,
-          json_name: "rejectionReason",
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
+        },
+        %Google.Protobuf.FieldDescriptorProto{
+          __unknown_fields__: [],
+          default_value: nil,
+          extendee: nil,
+          json_name: "rejectionReason",
+          label: :LABEL_OPTIONAL,
+          name: "rejection_reason",
+          number: 3,
+          oneof_index: nil,
+          options: nil,
+          proto3_optional: nil,
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "PermitRejected",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
@@ -495,68 +489,67 @@ defmodule Hatch.Permitting.PermitRejected do
   field :rejected_on, 2, type: :int32, json_name: "rejectedOn"
   field :rejection_reason, 3, type: :string, json_name: "rejectionReason"
 end
-
 defmodule Hatch.Permitting.PermitRequired do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "PermitRequired",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
-          proto3_optional: nil,
-          __unknown_fields__: []
-        },
-        %Google.Protobuf.FieldDescriptorProto{
-          name: "required_on",
-          extendee: nil,
-          number: 2,
           label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
-          default_value: nil,
-          options: nil,
+          name: "permit_id",
+          number: 1,
           oneof_index: nil,
-          json_name: "requiredOn",
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
-        },
-        %Google.Protobuf.FieldDescriptorProto{
-          name: "authority",
-          extendee: nil,
-          number: 3,
-          label: :LABEL_OPTIONAL,
           type: :TYPE_STRING,
-          type_name: nil,
+          type_name: nil
+        },
+        %Google.Protobuf.FieldDescriptorProto{
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
+          extendee: nil,
+          json_name: "requiredOn",
+          label: :LABEL_OPTIONAL,
+          name: "required_on",
+          number: 2,
           oneof_index: nil,
-          json_name: "authority",
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
+        },
+        %Google.Protobuf.FieldDescriptorProto{
+          __unknown_fields__: [],
+          default_value: nil,
+          extendee: nil,
+          json_name: "authority",
+          label: :LABEL_OPTIONAL,
+          name: "authority",
+          number: 3,
+          oneof_index: nil,
+          options: nil,
+          proto3_optional: nil,
+          type: :TYPE_STRING,
+          type_name: nil
         }
       ],
+      name: "PermitRequired",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
@@ -564,54 +557,53 @@ defmodule Hatch.Permitting.PermitRequired do
   field :required_on, 2, type: :int32, json_name: "requiredOn"
   field :authority, 3, type: :string
 end
-
 defmodule Hatch.Permitting.PermitSubmitted do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.11.0", syntax: :proto3
+  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
 
   def descriptor do
     # credo:disable-for-next-line
     %Google.Protobuf.DescriptorProto{
-      name: "PermitSubmitted",
+      __unknown_fields__: [],
+      enum_type: [],
+      extension: [],
+      extension_range: [],
       field: [
         %Google.Protobuf.FieldDescriptorProto{
-          name: "permit_id",
-          extendee: nil,
-          number: 1,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_STRING,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "permitId",
+          label: :LABEL_OPTIONAL,
+          name: "permit_id",
+          number: 1,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_STRING,
+          type_name: nil
         },
         %Google.Protobuf.FieldDescriptorProto{
-          name: "submitted_on",
-          extendee: nil,
-          number: 2,
-          label: :LABEL_OPTIONAL,
-          type: :TYPE_INT32,
-          type_name: nil,
+          __unknown_fields__: [],
           default_value: nil,
-          options: nil,
-          oneof_index: nil,
+          extendee: nil,
           json_name: "submittedOn",
+          label: :LABEL_OPTIONAL,
+          name: "submitted_on",
+          number: 2,
+          oneof_index: nil,
+          options: nil,
           proto3_optional: nil,
-          __unknown_fields__: []
+          type: :TYPE_INT32,
+          type_name: nil
         }
       ],
+      name: "PermitSubmitted",
       nested_type: [],
-      enum_type: [],
-      extension_range: [],
-      extension: [],
-      options: nil,
       oneof_decl: [],
-      reserved_range: [],
+      options: nil,
       reserved_name: [],
-      __unknown_fields__: []
+      reserved_range: []
     }
   end
 
